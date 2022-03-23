@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    profe que significaba
+    <meta charset="UFT-8">
+    <title> Clase 2 -tarea - programacion 3</title>
+</head>
+<!-- Crear un formulario utilizando los siguientes inputs: text, date, select, -->
+ <!-- textarea, radio y button. -->
+
+<body>
+  <h1 style="color: brown;"> Registro para cine</h1>
+  <H2>Compra de boletos</H2>
+<p> <b> Bienvenidos a nuestro cine TUP...</b>  </p>
+<p> Por favor llenar los datos correspondientes para la solicitud de su boleto</p>
+    <form action="/" method="post">
+
+        Nombre: <br>
+        <input type="text" placeholder="ingrese Nombre" name="NOMBRE"> <br>
+        Apellido: <br>
+        <input type="text" placeholder="ingrese apellido" name="apellido"> <br>
+       
+        Seleccione tipo de pelicula: <br>
+        <input type="radio" name="tipo" id="tipo" value="1">3d <br>
+        <input type="radio" name="tipo" id="tipo" value="2"> tradicional<br>
+        <input type="radio" name="tipo" id="tipo" value="3" checked>2d<br>
+        <br>
+        <br>
+
+        Ingrese Fecha que desea ver la pelicula : <br>
+        <input type="date" name="fecha_pelicula" id="fecha_pelicula" min="2022-03-23" max="2022-03-30">
+        <br>
+        <br>
+        seleccione pelicula: <br>
+        <select name="Provinicas" id="Provinicas">
+            <option value="">Seleccione..</option>
+            <option value="1">harry potter</option>
+            <option value="2">iron man</option>
+        </select>
+        <br>
+        <br>
+        Ingrese en que cine desea asistir: <br>
+        <input type="checkbox" name="selecione_cine" id="selecione_cine" checked> cine TUP... EN CORDOBA, chacabuco 89  <br>
+        <input type="checkbox" name="selecione_cine" id="selecione_cine"> cine TUP... EN CORDOBA,pattio olmos <br>
+        <input type="checkbox" name="selecione_cine" id="selecione_cine">cine TUP... EN CORDOBA,avenida general paz 456 
+        <br>
+        <br>
+
+        comentanos que te parece nuestra pagina web: <br>
+        <textarea style="resize: none;" sname="comentario" id="comentario" cols="30" rows="10"
+            placeholder="ingrese su comentario"></textarea> <br>
+
+        Ingrese su numero de entradas que necesita: <br>
+        <input type="number" name="numero" id="numero" min="1" max="5">
+        <br>
+        <br>
+        <button type="submit">registrarse</button>
+        <button type="reset">restablecer</button>
+
+    </form>
+</body>
+
+
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="uft-8">
+    <style>
+        *{
+            font-family: 'Courier New', Courier, monospace;
+            font-size:
+        }
+        p {
+            font-size: 16px;
+            color: black;
+            background-color: cyan;
+        }
+
+        h1 {
+            color: rebeccapurple;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .parrafo-negrita {
+            font-weight: bold;
+            font-size: large;
+        }
+
+        #parrafo-id {
+            border: 5px solid red;
+            font-size: small;
+        }
+
+        /* grupo de selectores */
+        p,
+        .parrafo-negrita,
+        #parrafo-id{
+            border: 10px solid green;
+        }
+
+        .span {
+            font-weight: 100;
+            font-size: inherit;
+        }
+
+        /* selectores para elementos subsiguientes */
+        /* p+span    SE APLICA PARA EL SIGUIENTE SPAN EN EL MISMO PARRAFO */
+        p+span{
+            color: black;
+            font-size: large;
+        }
+        /* selector para todo aquel elemento q se encuentre dentro de <p> sin importar el nivel de jerarquia */
+        p span {
+            color: blue;
+
+           
+        }
+
+        /* selector para elementos en el primer nivel de jerarquia */
+        p>span {
+            color: red;
+        }
+    </style>
+    <title>clase 2</title>
+
+
+</head>
+
+<body>
+    <h1 class="parrafo-negrita">Estilos</h1>
+  <span>subtitulo</span>
+    <p class="parrafo-negrita" style=" font-size: 16px; color: white; background-color: black; font-family: Arial, Helvetica, sans-serif;">
+        Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.
+        Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, c
+        uando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una
+        galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen.
+    </p>
+    <p class="parrafo-negrita"><span> Es un hecho establecido hace</span>
+        demasiado tiempo que un
+        lector se distraerá con el contenido del texto de un sitio mientras que mira su diseño.
+        El punto de usar Lorem Ipsum es que tiene una distribución más o
+        menos normal de las letras <strong><span>asdhaskjgdajkfsgbj</span></strong>
+    </p>
+    <span>texto prueba
+
+    </span>
+    <p class="parrafo-negrita">
+        Muchas <span>sdfsafkjsdhkjfsjkggdf</span> versiones han evolucionado a través de los años, algunas veces por
+        accidente,
+        otras veces a propósito (por ejemplo insertándole humor y cosas por el estilo)
+    </p>
+    <p class="parrafo-negrita" id="parrafo-id">
+        Muchas versiones han evolucionado a través de los años, algunas veces por accidente,
+        otras veces a propósito (por ejemplo insertándole humor y cosas por el estilo)
+    </p>
+</body>
+
+</html>
